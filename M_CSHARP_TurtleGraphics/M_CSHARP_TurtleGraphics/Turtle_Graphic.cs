@@ -20,7 +20,6 @@ namespace M_CSHARP_TurtleGraphics
 
         private void load_button_Click(object sender, EventArgs e)
         {
-            int size = -1;
             DialogResult result = openFileDialog1.ShowDialog();
             if (result == DialogResult.OK)
             {
@@ -28,7 +27,12 @@ namespace M_CSHARP_TurtleGraphics
                 try
                 {
                     string text = File.ReadAllText(file);
-                    size = text.Length;
+                    FileReader.SplitTextFileToCommands(text);
+                    foreach (var command in FileReader.SplittedCommands)
+                    {
+                        commands_listbox.Items.Add(command);
+                    }
+                   
                 }
                 catch (IOException)
                 {
