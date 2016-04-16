@@ -1,6 +1,6 @@
 ﻿namespace M_CSHARP_TurtleGraphics
 {
-    partial class Turtle_Graphic
+    partial class TurtleGraphic
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Turtle_Graphic));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TurtleGraphic));
             this.panel3 = new System.Windows.Forms.Panel();
             this.reset_button = new System.Windows.Forms.Button();
             this.command_textbox = new System.Windows.Forms.TextBox();
@@ -41,7 +41,7 @@
             this.help_label = new System.Windows.Forms.Label();
             this.save_button = new System.Windows.Forms.Button();
             this.commands_listbox = new System.Windows.Forms.ListBox();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.load_OpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.panel3.SuspendLayout();
             this.paper_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.turtle_pbox)).BeginInit();
@@ -167,12 +167,12 @@
             this.commands_listbox.Size = new System.Drawing.Size(120, 238);
             this.commands_listbox.TabIndex = 0;
             // 
-            // openFileDialog1
+            // load_OpenFileDialog
             // 
-            this.openFileDialog1.AutoUpgradeEnabled = false;
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.Filter = "|*.txt";
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+            this.load_OpenFileDialog.AutoUpgradeEnabled = false;
+            this.load_OpenFileDialog.FileName = "load_OpenFileDialog";
+            this.load_OpenFileDialog.Filter = "|*.txt";
+            this.load_OpenFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // Turtle_Graphic
             // 
@@ -184,7 +184,7 @@
             this.Controls.Add(this.paper_panel);
             this.Controls.Add(this.panel3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Turtle_Graphic";
+            this.Name = "TurtleGraphic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Turtle Graphic";
             this.panel3.ResumeLayout(false);
@@ -210,7 +210,7 @@
         private System.Windows.Forms.Label help_label;
         private System.Windows.Forms.Button save_button;
         private System.Windows.Forms.ListBox commands_listbox;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.OpenFileDialog load_OpenFileDialog;
     }
 }
 

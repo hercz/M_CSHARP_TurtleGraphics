@@ -47,11 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FileHandler.cs" />
-    <Compile Include="Turtle_Graphic.cs">
+    <Compile Include="TurtleGraphic.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Turtle_Graphic.Designer.cs">
-      <DependentUpon>Turtle_Graphic.cs</DependentUpon>
+    <Compile Include="TurtleGraphic.Designer.cs">
+      <DependentUpon>TurtleGraphic.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,8 +65,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Turtle_Graphic.resx">
-      <DependentUpon>Turtle_Graphic.cs</DependentUpon>
+    <EmbeddedResource Include="TurtleGraphic.resx">
+      <DependentUpon>TurtleGraphic.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

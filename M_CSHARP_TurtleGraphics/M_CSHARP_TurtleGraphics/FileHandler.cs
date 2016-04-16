@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace M_CSHARP_TurtleGraphics
 {
-    class FileHandler
+    public class FileHandler
     {
         public OpenFileDialog Dialog { get; }
         public ListBox ListBox { get; }

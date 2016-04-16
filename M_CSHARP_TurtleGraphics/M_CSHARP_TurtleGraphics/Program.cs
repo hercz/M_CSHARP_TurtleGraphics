@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace M_CSHARP_TurtleGraphics
@@ -16,7 +13,7 @@ namespace M_CSHARP_TurtleGraphics
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Turtle_Graphic());
+            Application.Run(new TurtleGraphic());
         }
     }
 }
