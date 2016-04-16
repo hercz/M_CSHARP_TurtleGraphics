@@ -13,31 +13,18 @@ namespace M_CSHARP_TurtleGraphics
 {
     public partial class Turtle_Graphic : Form
     {
+        private FileHandler fileHandler;
+
+
         public Turtle_Graphic()
         {
             InitializeComponent();
+            fileHandler = new FileHandler(openFileDialog1, commands_listbox);
         }
 
         private void load_button_Click(object sender, EventArgs e)
         {
-            DialogResult result = openFileDialog1.ShowDialog();
-            if (result == DialogResult.OK)
-            {
-                string file = openFileDialog1.FileName;
-                try
-                {
-                    string text = File.ReadAllText(file);
-                    FileReader.SplitTextFileToCommands(text);
-                    foreach (var command in FileReader.SplittedCommands)
-                    {
-                        commands_listbox.Items.Add(command);
-                    }
-                   
-                }
-                catch (IOException)
-                {
-                }
-            }
+            fileHandler.FillCommandList_TextBox();
         }
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
