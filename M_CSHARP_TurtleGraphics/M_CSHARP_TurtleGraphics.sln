@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M_CSHARP_TurtleGraphics", "M_CSHARP_TurtleGraphics\M_CSHARP_TurtleGraphics.csproj", "{5B632F64-68CB-47E2-B440-1D326C6F254B}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B632F64-68CB-47E2-B440-1D326C6F254B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B632F64-68CB-47E2-B440-1D326C6F254B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B632F64-68CB-47E2-B440-1D326C6F254B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B632F64-68CB-47E2-B440-1D326C6F254B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace M_CSHARP_TurtleGraphics
 {
-    public partial class Form1 : Form
+    public partial class Turtle_Graphic : Form
     {
-        public Form1()
+        public Turtle_Graphic()
         {
             InitializeComponent();
         }
