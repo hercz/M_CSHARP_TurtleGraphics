@@ -32,7 +32,7 @@ namespace M_CSHARP_TurtleGraphics
             }
         }
 
-        private void GetSplittedCommand(string text)
+        public void GetSplittedCommand(string text)
         {
             const char delimiter = ',';
             var splittedCommands = text.Split(delimiter);
