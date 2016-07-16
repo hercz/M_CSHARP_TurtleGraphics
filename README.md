@@ -1,6 +1,7 @@
 # Turtle Graphics
 
 ***---in progress---***
+
 This is my first milestone task, in Codecool. It is time to start developing program, that will implement or demonstrate my ideas about a complex task. It is a task, where i can practice to use software engineering techniques.
 
 **TASK**
